@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Proyecto Final</string>
+    <string name="registrarse">REGISTRARSE</string>
+    <string name="iniciar_sesion">INICIAR SESION</string>
+</resources>
