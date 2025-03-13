@@ -3,6 +3,7 @@ package com.example.proyectofinal;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -20,6 +21,16 @@ public class registro extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_registro);
         getWindow().setStatusBarColor(getResources().getColor(R.color.blue));
+
+        // Hacer que la aplicación esté en pantalla completa
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        // Configurar la visibilidad de las barras del sistema
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
 
         TextView txtTengoCuenta = findViewById(R.id.txtTengocuenta);
         txtTengoCuenta.setOnClickListener(new View.OnClickListener() {
