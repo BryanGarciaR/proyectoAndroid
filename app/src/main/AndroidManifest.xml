@@ -13,25 +13,28 @@
         android:theme="@style/Theme.ProyectoFinal"
         tools:targetApi="31">
         <activity
-            android:name=".Principal"
-            android:screenOrientation="portrait"
-            android:forceDarkAllowed="false"
+            android:name=".AgregarNota"
             android:exported="false" />
+        <activity
+            android:name=".Principal"
+            android:exported="false"
+            android:forceDarkAllowed="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".registro"
-            android:screenOrientation="portrait"
+            android:exported="false"
             android:forceDarkAllowed="false"
-            android:exported="false" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ingreso"
-            android:screenOrientation="portrait"
+            android:exported="false"
             android:forceDarkAllowed="false"
-            android:exported="false" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"
+            android:exported="true"
             android:forceDarkAllowed="false"
-            android:exported="true">
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

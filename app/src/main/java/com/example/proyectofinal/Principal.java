@@ -22,7 +22,10 @@ public class Principal extends AppCompatActivity {
         // Obtener referencia al botón "Salir"
         Button btnSalir = findViewById(R.id.btnSalir);
 
-        // Agregar listener para manejar el clic en el botón
+
+
+
+        // Agregar listener para manejar el clic en el botón salir
         btnSalir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,6 +37,17 @@ public class Principal extends AppCompatActivity {
 
 
 
+            }
+
+        });
+
+        Button btnAgregarNota = findViewById(R.id.btnAgregarNotas);
+
+        btnAgregarNota.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View v){
+                Intent intent = new Intent(Principal.this, AgregarNota.class);
+                startActivity(intent);
             }
         });
     }

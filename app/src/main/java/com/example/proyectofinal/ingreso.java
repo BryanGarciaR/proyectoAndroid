@@ -16,6 +16,7 @@ public class ingreso extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_ingreso);
+        getWindow().setStatusBarColor(getResources().getColor(R.color.blue));
 
         // Obtener referencia al botón "Ingresar"
         Button btnIngresar = findViewById(R.id.btnIngresar);

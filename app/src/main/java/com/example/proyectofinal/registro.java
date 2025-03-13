@@ -19,6 +19,7 @@ public class registro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_registro);
+        getWindow().setStatusBarColor(getResources().getColor(R.color.blue));
 
         TextView txtTengoCuenta = findViewById(R.id.txtTengocuenta);
         txtTengoCuenta.setOnClickListener(new View.OnClickListener() {
