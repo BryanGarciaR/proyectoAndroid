@@ -28,7 +28,7 @@ public class ingreso extends AppCompatActivity {
                 | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                 | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
 
-        // Obtener referencia al botón "Ingresar"
+        // referencia al botón "Ingresar"
         Button btnIngresar = findViewById(R.id.btnIngresar);
         // Obtener referencia al texto "Registrate"
         TextView txtRegistrarse = findViewById(R.id.txtRegistrarse);

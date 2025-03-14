@@ -8,7 +8,7 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="412dp"
+        android:layout_width="match_parent"
         android:layout_height="99dp"
         android:background="#664FA3"
         android:orientation="horizontal"
@@ -102,7 +102,7 @@
 
     <Button
         android:id="@+id/btn_registrar"
-        android:layout_width="283dp"
+        android:layout_width="275dp"
         android:layout_height="70dp"
         android:text="REGISTRAR"
         android:textSize="19dp"

@@ -39,7 +39,7 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:paddingTop="20dp"
-            app:srcCompat="@mipmap/opcionesicono" />
+            app:srcCompat="@mipmap/opcionesicono"/>
     </LinearLayout>
 
     <FrameLayout
