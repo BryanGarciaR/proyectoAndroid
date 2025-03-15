@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinal"
         tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity" />
+
+        <activity
+            android:name=".pantalla_De_carga"
+            android:exported="true"
+            android:forceDarkAllowed="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".MisContactos"
             android:exported="false" />
@@ -33,17 +48,6 @@
             android:exported="false"
             android:forceDarkAllowed="false"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:forceDarkAllowed="false"
-            android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
