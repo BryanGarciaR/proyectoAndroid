@@ -1,10 +1,13 @@
 package com.example.proyectofinal;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -20,12 +23,24 @@ public class AgregarNota extends AppCompatActivity {
     private TextView txtFecha2;
     private TextView txtFecha;
 
+    ImageView  btnGuardar, btnBack;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_agregarnota);
 
+        //Vinculando mis variables a los botones correspondientes
+        btnBack = findViewById(R.id.btnBack);
+        btnGuardar = findViewById(R.id.btnGuardar);
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AgregarNota.this, Principal.class));
+            }
+        });
         getWindow().setStatusBarColor(getResources().getColor(R.color.blue));
         // Hacer que la aplicación esté en pantalla completa
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
