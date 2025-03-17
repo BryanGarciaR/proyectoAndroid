@@ -17,7 +17,7 @@
             android:name=".MainActivity" />
 
         <activity
-            android:name=".pantalla_De_carga"
+            android:name=".Pantalla_De_Carga"
             android:exported="true"
             android:forceDarkAllowed="false"
             android:screenOrientation="portrait">
@@ -39,12 +39,12 @@
             android:forceDarkAllowed="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".registro"
+            android:name=".Registro"
             android:exported="false"
             android:forceDarkAllowed="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ingreso"
+            android:name=".Login"
             android:exported="false"
             android:forceDarkAllowed="false"
             android:screenOrientation="portrait" />

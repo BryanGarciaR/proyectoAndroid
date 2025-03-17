@@ -1,5 +1,19 @@
 <resources>
     <string name="app_name">Proyecto Final</string>
     <string name="registrarse">REGISTRARSE</string>
+
+
     <string name="iniciar_sesion">INICIAR SESION</string>
+    <string name="CorreoLogin">Correo </string>
+    <string name="PassLogin">Contraseña </string>
+    <string name="Btn_Logeo">Ingresar </string>
+    <string name="UsuarioNuevoTXT">¿No tienes Cuenta?. Registrate </string>
+
+
+
+
+
+    <string name="CerrarSe">Salir </string>
+
+
 </resources>
