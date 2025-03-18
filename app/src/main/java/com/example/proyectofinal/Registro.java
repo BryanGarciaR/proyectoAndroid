@@ -12,6 +12,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import androidx.core.content.ContextCompat;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -44,6 +45,8 @@ public class Registro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
+        getWindow().setStatusBarColor(getResources().getColor(R.color.blue));
+        View decorView = getWindow().getDecorView();
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -84,10 +87,10 @@ public class Registro extends AppCompatActivity {
             }
         });
 
-        getWindow().setStatusBarColor(getResources().getColor(R.color.blue));
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        View decorView = getWindow().getDecorView();
+
         decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN
                 | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                 | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
@@ -155,7 +158,7 @@ public class Registro extends AppCompatActivity {
                     public void onSuccess(Void unused) {
                         progressDialog.dismiss();
                         Toast.makeText(Registro.this, "Cuenta creada con éxito", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(Registro.this, Principal.class));
+                        startActivity(new Intent(Registro.this, Login.class));
                         finish();
                     }
                 })
@@ -175,8 +178,3 @@ public class Registro extends AppCompatActivity {
         return super.onSupportNavigateUp();
     }
 }
-
-
-
-
-

@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,7 +40,17 @@ public class AgregarNota extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(AgregarNota.this, Principal.class));
             }
+
+
         });
+
+        btnGuardar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(AgregarNota.this, "Nota guardada con exito", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(AgregarNota.this, Principal.class));
+
+            }});
         getWindow().setStatusBarColor(getResources().getColor(R.color.blue));
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);

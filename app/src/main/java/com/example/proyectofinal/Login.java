@@ -112,7 +112,7 @@ public class Login extends AppCompatActivity {
                             finish();
                         } else {
                             progressDialog.dismiss();
-                            Toast.makeText(Login.this, "Verifique que el correo y la contraseña sean correctos", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Login.this, "Verifique que el correo y la contraseña sean correctas", Toast.LENGTH_SHORT).show();
                             Log.e("Login", "Error al iniciar sesión", task.getException());
                         }
                     }

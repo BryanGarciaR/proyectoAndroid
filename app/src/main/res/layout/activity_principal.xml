@@ -11,13 +11,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="72dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center|end"
-        android:layout_marginTop="-100dp"
+        android:layout_marginTop="-80dp"
         android:background="#664FA3"
         android:gravity="center|center_horizontal"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/imgUsericono1"
@@ -42,11 +41,12 @@
             app:srcCompat="@mipmap/opcionesicono" />
     </LinearLayout>
 
+
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="145dp"
-        android:layout_marginBottom="60dp"
-        android:layout_marginTop="0dp">
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="60dp">
 
 
         <View
@@ -65,8 +65,8 @@
             android:layout_width="107dp"
             android:layout_height="120dp"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="35dp"
             android:layout_alignParentTop="true"
+            android:layout_marginLeft="35dp"
             android:layout_marginTop="12dp"
             android:background="#F4A9A9">
 
@@ -77,12 +77,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="50dp"
-            android:textSize="25dp"
-            android:text="Bienvenid@" />
+            android:layout_marginTop="20dp"
+            android:text="Bienvenid@"
+            android:textSize="25dp" />
     </FrameLayout>
-
 
     <LinearLayout
         android:layout_width="match_parent"
